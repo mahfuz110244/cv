@@ -71,7 +71,7 @@
 \end{minipage}
 
 \cvsection{Professional Summary}
-Backend Lead Engineer with \textbf{10+ years of experience} designing, modernizing, and scaling distributed systems, microservices, and payment platforms across \textbf{EdTech, FinTech, E-commerce, Logistics, and SaaS}. Currently lead backend engineering at \textbf{Shikho}, Bangladesh's largest EdTech platform (\textbf{3M+ learners}). Deep in Golang and system design, with a track record in legacy modernization, production reliability, team mentoring, and AI-assisted engineering workflows.
+Backend Lead Engineer with \textbf{10+ years of experience} designing, modernizing, and scaling distributed systems, microservices, and payment platforms across \textbf{EdTech, FinTech, E-commerce, Logistics, and SaaS}. Currently lead backend engineering at \textbf{Shikho}, Bangladesh's largest EdTech platform (\textbf{3M+ learners}). Deep expertise in Golang and system design, with a track record in legacy modernization, production reliability and performance engineering, team mentoring, and AI-assisted engineering workflows.
 
 \cvsection{Core Skills}
 \begin{tabularx}{\textwidth}{>{\bfseries}p{3.3cm}@{\hspace{0.6em}}X}
@@ -86,8 +86,12 @@ AI Productivity & Spec-driven development, context engineering, AI-augmented cod
 \cvsection{Career Highlights}
 \begin{cvitems}
   \item Lead backend engineering at \textbf{Shikho} (\textbf{3M+ learners}), setting architecture and delivery standards across an \textbf{8-member backend team} within a \textbf{30+ engineer} organization.
-  \item Architected and shipped \textbf{20+ production microservices} spanning payments, wallet, enrollment, and content platforms [ADD METRIC: e.g., sustaining \textasciitilde N req/s at 99.9\% uptime].
-  \item Led monolith-to-microservices migrations and payment-orchestration platforms [ADD METRIC: e.g., cutting deployment time \textasciitilde X\% / reducing infra cost \textasciitilde Y\%].
+  \item Cut a production DocumentDB cluster from a sustained \textbf{90\% CPU to \textasciitilde{}12\%} by root-causing and fixing change-stream busy-polling across \textasciitilde{}102 cursors.
+  \item Architected and shipped \textbf{20+ production microservices} spanning payments, wallet, enrollment, and content platforms.
+  % TODO metric: e.g., sustaining ~N req/s at 99.9% uptime
+  \item Built the wallet microservice powering balance payments, refunds, and cashbacks for \textbf{Evaly}, a high-traffic e-commerce platform with \textbf{\textasciitilde{}10M users}.
+  \item Led monolith-to-microservices migrations and payment-orchestration platforms across EdTech, FinTech, and E-commerce.
+  % TODO metric: e.g., deployment time cut ~X% / infra cost reduced ~Y%
 \end{cvitems}
 
 \cvsection{Professional Experience}
@@ -95,21 +99,26 @@ AI Productivity & Spec-driven development, context engineering, AI-augmented cod
 \begin{cvitems}
   \item Own backend architecture and delivery across learning, enrollment, payments, content delivery, and operations for Bangladesh's largest EdTech platform.
   \item Provide technical leadership across \textbf{30+ engineers} while directly leading an \textbf{8-member backend team}.
-  \item Design and maintain production Golang microservices focused on scalability, reliability, and maintainability [ADD METRIC: e.g., serving \textasciitilde N req/s across core services].
-  \item Drive backend modernization through API refactoring, service decomposition, and platform optimization, improving [ADD METRIC: e.g., p99 latency / reliability], with rigorous architecture review, code review, and incident analysis.
+  \item Diagnosed and eliminated a sustained \textbf{90\% CPU} bottleneck on Bohubrihi's production DocumentDB cluster by fixing Go change-stream busy-polling, duplicate listeners, and redundant connection pools; \textbf{CPU fell to \textasciitilde{}12\%} within minutes of deploy.
+  \item Design and maintain production Golang microservices focused on scalability, reliability, and maintainability.
+  % TODO metric: e.g., serving ~N req/s across core services
+  \item Drive backend modernization through API refactoring, service decomposition, and platform optimization, with rigorous architecture review, code review, and incident analysis.
+  % TODO metric: e.g., p99 latency / reliability improvement
   \item Apply \textbf{Claude Code, OpenAI Codex, and Gemini CLI} to accelerate delivery, test generation, and documentation while keeping design and review human-led.
 \end{cvitems}
 
 \roleentry{Senior Software Engineer}{Jul 2024 -- Dec 2024}{Supertal Pte. Ltd.}{Singapore}
 \begin{cvitems}
   \item Served as lead backend engineer for the \textbf{Hypermart Backend Team}, supporting a large Indonesian grocery retail chain.
-  \item Built core, discount, and seller APIs using \textbf{Golang, MongoDB, MySQL, Elasticsearch, and Redis}; refactored legacy services to improve maintainability and stability [ADD METRIC: e.g., cut p95 latency / defect rate by X\%].
+  \item Built core, discount, and seller APIs using \textbf{Golang, MongoDB, MySQL, Elasticsearch, and Redis}; refactored legacy services to improve maintainability and stability.
+  % TODO metric: e.g., cut p95 latency / defect rate by X%
 \end{cvitems}
 
 \roleentry{SDE-II Golang Engineer, Team Lead -- Bohubrihi}{Apr 2022 -- Jun 2024}{Shikho}{Banani, Dhaka}
 \begin{cvitems}
   \item Led the \textbf{Bohubrihi Backend Team}, owning \textbf{7 production microservices} across learners, instructors, enrollment, content, and operations.
-  \item Drove migration of the Bohubrihi WordPress monolith to a scalable microservices architecture [ADD METRIC: e.g., enabling independent deploys / improving uptime or page-load by X].
+  \item Drove migration of the Bohubrihi WordPress monolith to a scalable microservices architecture with independently deployable services.
+  % TODO metric: e.g., uptime or page-load improved by X
   \item Mentored engineers on clean architecture, code quality, and review practices, raising delivery consistency across the team.
 \end{cvitems}
 
@@ -119,10 +128,12 @@ AI Productivity & Spec-driven development, context engineering, AI-augmented cod
   \item Delivered \textbf{Choukash ERP} microservices for Gononet LLC, USA, and guided junior engineers across parallel projects.
 \end{cvitems}
 
-\roleentry{Software Engineer}{Feb 2021 -- Sep 2021}{Evaly Ltd.}{Dhanmondi, Dhaka}
+\roleentry{Senior Software Engineer}{Feb 2021 -- Sep 2021}{Evaly Ltd.}{Dhanmondi, Dhaka}
 \begin{cvitems}
-  \item Built a high-throughput wallet microservice for balance payments, refunds, and cashbacks serving millions of users [ADD METRIC: e.g., \textasciitilde N TPS / \$X monthly volume].
-  \item Built payment-orchestration integrations with \textbf{bKash, Nagad, SSLCommerz, Balance, and Gift Card}; optimized queries and caching to reduce AWS cost [ADD METRIC: e.g., by \textasciitilde X\%] and improve response times.
+  \item Built a high-throughput \textbf{wallet} microservice for balance payments, refunds, and cashbacks serving \textbf{\textasciitilde{}10M users}.
+  % TODO metric: e.g., ~N TPS / $X monthly volume
+  \item Built payment-orchestration integrations with \textbf{bKash, Nagad, SSLCommerz, Balance, and Gift Card}; optimized queries and caching to reduce AWS cost and improve response times.
+  % TODO metric: e.g., AWS cost reduced by ~X%
 \end{cvitems}
 
 \roleentry{Senior Software Engineer}{Sep 2020 -- Jan 2021}{Dingi Technologies Ltd.}{Gulshan, Dhaka}
@@ -142,7 +153,7 @@ AI Productivity & Spec-driven development, context engineering, AI-augmented cod
 
 \cvsection{Selected Projects}
 \projectentry{Shikho}{Large-scale EdTech platform serving \textbf{3M+ learners}; led backend architecture and delivery for learning, enrollment, payments, content delivery, and operations.}{Golang, MongoDB, PostgreSQL, Redis, RabbitMQ, Docker, gRPC, GraphQL}
-\projectentry{Bohubrihi}{Online learning platform migrated from WordPress monolith to \textbf{7 production microservices}; led backend service decomposition and delivery.}{Golang, MongoDB, PostgreSQL, Redis, RabbitMQ, NATS, Docker, GraphQL}
+\projectentry{Bohubrihi}{Online learning platform migrated from WordPress monolith to \textbf{7 production microservices}; led backend service decomposition and delivery, including a production performance fix that took the platform's DocumentDB cluster from \textasciitilde{}90\% to \textasciitilde{}12\% CPU.}{Golang, MongoDB, AWS DocumentDB, PostgreSQL, Redis, RabbitMQ, NATS, Docker, GraphQL}
 \projectentry{Hypermart}{Backend services for a large Indonesian grocery retail chain; developed core, discount, and seller APIs and improved legacy API quality.}{Golang, MongoDB, MySQL, Elasticsearch, Redis}
 \projectentry{Evaly Wallet \& Payments}{High-throughput wallet and payment orchestration platform integrating bKash, Nagad, SSLCommerz, Balance, and Gift Cards.}{Golang, Python, Django REST Framework, PostgreSQL, Redis, RabbitMQ, Docker}
 \projectentry{GorillaMove \& Choukash ERP}{Grocery delivery and ERP microservices covering core, inventory, sales, order processing, and operational workflows.}{Golang, Echo, PostgreSQL, Docker, Algolia}
